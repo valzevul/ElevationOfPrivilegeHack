@@ -22,9 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.makeKeyAndVisible()
   }
   
-  
   func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-    openDetailedPageFromExtension()
+    openMainPageFromExtension()
     return true
   }
   
