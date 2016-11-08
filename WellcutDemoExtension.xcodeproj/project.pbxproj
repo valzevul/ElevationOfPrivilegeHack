@@ -13,7 +13,34 @@
 		82F10CEC1DD2064C00421611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F10CEB1DD2064C00421611 /* Assets.xcassets */; };
 		82F10CEF1DD2064C00421611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F10CED1DD2064C00421611 /* LaunchScreen.storyboard */; };
 		82F10CF71DD20E7000421611 /* DetailedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */; };
+		82F10D021DD2101000421611 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F10D001DD2101000421611 /* MainInterface.storyboard */; };
+		82F10D061DD2101000421611 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 82F10CFC1DD2101000421611 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		82F10D0E1DD21DD200421611 /* OpenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10D0D1DD21DD200421611 /* OpenPageViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82F10D041DD2101000421611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F10CD91DD2064C00421611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82F10CFB1DD2101000421611;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82F10D0A1DD2101000421611 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				82F10D061DD2101000421611 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		82F10CE11DD2064C00421611 /* WellcutDemoExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellcutDemoExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,23 @@
 		82F10CEE1DD2064C00421611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82F10CF01DD2064C00421611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPageViewController.swift; sourceTree = "<group>"; };
+		82F10CFC1DD2101000421611 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F10D011DD2101000421611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		82F10D031DD2101000421611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F10D0B1DD2102D00421611 /* WellcutDemoExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WellcutDemoExtension.entitlements; sourceTree = "<group>"; };
+		82F10D0C1DD2104800421611 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		82F10D0D1DD21DD200421611 /* OpenPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		82F10CDE1DD2064C00421611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F10CF91DD2101000421611 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				82F10CE31DD2064C00421611 /* WellcutDemoExtension */,
+				82F10CFD1DD2101000421611 /* ShareExtension */,
 				82F10CE21DD2064C00421611 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				82F10CE11DD2064C00421611 /* WellcutDemoExtension.app */,
+				82F10CFC1DD2101000421611 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +98,7 @@
 		82F10CE31DD2064C00421611 /* WellcutDemoExtension */ = {
 			isa = PBXGroup;
 			children = (
+				82F10D0B1DD2102D00421611 /* WellcutDemoExtension.entitlements */,
 				82F10CE41DD2064C00421611 /* AppDelegate.swift */,
 				82F10CE61DD2064C00421611 /* MainPageViewController.swift */,
 				82F10CE81DD2064C00421611 /* Main.storyboard */,
@@ -65,6 +108,17 @@
 				82F10CF01DD2064C00421611 /* Info.plist */,
 			);
 			path = WellcutDemoExtension;
+			sourceTree = "<group>";
+		};
+		82F10CFD1DD2101000421611 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				82F10D0C1DD2104800421611 /* ShareExtension.entitlements */,
+				82F10D001DD2101000421611 /* MainInterface.storyboard */,
+				82F10D0D1DD21DD200421611 /* OpenPageViewController.swift */,
+				82F10D031DD2101000421611 /* Info.plist */,
+			);
+			path = ShareExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +131,34 @@
 				82F10CDD1DD2064C00421611 /* Sources */,
 				82F10CDE1DD2064C00421611 /* Frameworks */,
 				82F10CDF1DD2064C00421611 /* Resources */,
+				82F10D0A1DD2101000421611 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				82F10D051DD2101000421611 /* PBXTargetDependency */,
 			);
 			name = WellcutDemoExtension;
 			productName = WellcutDemoExtension;
 			productReference = 82F10CE11DD2064C00421611 /* WellcutDemoExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		82F10CFB1DD2101000421611 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F10D071DD2101000421611 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				82F10CF81DD2101000421611 /* Sources */,
+				82F10CF91DD2101000421611 /* Frameworks */,
+				82F10CFA1DD2101000421611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 82F10CFC1DD2101000421611 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +174,21 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = X72G5VQBS8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					82F10CFB1DD2101000421611 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X72G5VQBS8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -118,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				82F10CE01DD2064C00421611 /* WellcutDemoExtension */,
+				82F10CFB1DD2101000421611 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +219,14 @@
 				82F10CEF1DD2064C00421611 /* LaunchScreen.storyboard in Resources */,
 				82F10CEC1DD2064C00421611 /* Assets.xcassets in Resources */,
 				82F10CEA1DD2064C00421611 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82F10CFA1DD2101000421611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F10D021DD2101000421611 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82F10CF81DD2101000421611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F10D0E1DD21DD200421611 /* OpenPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82F10D051DD2101000421611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82F10CFB1DD2101000421611 /* ShareExtension */;
+			targetProxy = 82F10D041DD2101000421611 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		82F10CE81DD2064C00421611 /* Main.storyboard */ = {
@@ -163,6 +276,14 @@
 				82F10CEE1DD2064C00421611 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		82F10D001DD2101000421611 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82F10D011DD2101000421611 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,7 +385,9 @@
 		82F10CF41DD2064C00421611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WellcutDemoExtension/WellcutDemoExtension.entitlements;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
 				INFOPLIST_FILE = WellcutDemoExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -278,13 +401,43 @@
 		82F10CF51DD2064C00421611 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WellcutDemoExtension/WellcutDemoExtension.entitlements;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
 				INFOPLIST_FILE = WellcutDemoExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobinin.WellcutDemoExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		82F10D081DD2101000421611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				DEVELOPMENT_TEAM = X72G5VQBS8;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drobinin.WellcutDemoExtension.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		82F10D091DD2101000421611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				DEVELOPMENT_TEAM = X72G5VQBS8;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drobinin.WellcutDemoExtension.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +459,14 @@
 			buildConfigurations = (
 				82F10CF41DD2064C00421611 /* Debug */,
 				82F10CF51DD2064C00421611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82F10D071DD2101000421611 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F10D081DD2101000421611 /* Debug */,
+				82F10D091DD2101000421611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
