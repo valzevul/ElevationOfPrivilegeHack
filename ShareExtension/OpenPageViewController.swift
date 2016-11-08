@@ -15,7 +15,19 @@ class OpenPageViewController: UIViewController {
     let context = NSExtensionContext()
     context.open(url! as URL, completionHandler: nil)
     var responder = self as UIResponder?
-    while (responder != nil){
+    while (responder != nil) {
+      
+      // The trickiest part.
+      //
+      // The warning itself isn't related to Swift 3, this is mostly a note that
+      // this method will be deprecated one day.
+      
+      // For now Apple approves applications with Selectors used to
+      // open a host app via an extension. For example, feel free to check Opener:
+      // https://itunes.apple.com/us/app/opener-open-links-in-apps/id989565871?mt=8
+      // (they use the same approach)
+      
+      
       if responder?.responds(to: Selector("openURL:")) == true {
         responder?.perform(Selector("openURL:"), with: url)
       }
