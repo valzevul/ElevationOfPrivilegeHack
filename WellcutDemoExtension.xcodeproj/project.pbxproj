@@ -98,14 +98,10 @@
 		82F10CE31DD2064C00421611 /* WellcutDemoExtension */ = {
 			isa = PBXGroup;
 			children = (
-				82F10D0B1DD2102D00421611 /* WellcutDemoExtension.entitlements */,
 				82F10CE41DD2064C00421611 /* AppDelegate.swift */,
-				82F10CE61DD2064C00421611 /* MainPageViewController.swift */,
 				82F10CE81DD2064C00421611 /* Main.storyboard */,
-				82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */,
-				82F10CEB1DD2064C00421611 /* Assets.xcassets */,
-				82F10CED1DD2064C00421611 /* LaunchScreen.storyboard */,
 				82F10CF01DD2064C00421611 /* Info.plist */,
+				82F10D0F1DD22C2000421611 /* Other files */,
 			);
 			path = WellcutDemoExtension;
 			sourceTree = "<group>";
@@ -113,12 +109,32 @@
 		82F10CFD1DD2101000421611 /* ShareExtension */ = {
 			isa = PBXGroup;
 			children = (
-				82F10D0C1DD2104800421611 /* ShareExtension.entitlements */,
 				82F10D001DD2101000421611 /* MainInterface.storyboard */,
 				82F10D0D1DD21DD200421611 /* OpenPageViewController.swift */,
 				82F10D031DD2101000421611 /* Info.plist */,
+				82F10D101DD22C4600421611 /* Other files */,
 			);
 			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		82F10D0F1DD22C2000421611 /* Other files */ = {
+			isa = PBXGroup;
+			children = (
+				82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */,
+				82F10CE61DD2064C00421611 /* MainPageViewController.swift */,
+				82F10D0B1DD2102D00421611 /* WellcutDemoExtension.entitlements */,
+				82F10CED1DD2064C00421611 /* LaunchScreen.storyboard */,
+				82F10CEB1DD2064C00421611 /* Assets.xcassets */,
+			);
+			name = "Other files";
+			sourceTree = "<group>";
+		};
+		82F10D101DD22C4600421611 /* Other files */ = {
+			isa = PBXGroup;
+			children = (
+				82F10D0C1DD2104800421611 /* ShareExtension.entitlements */,
+			);
+			name = "Other files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
