@@ -42,7 +42,7 @@
         <!--Detailed Page View Controller-->
         <scene sceneID="CHb-fF-X3T">
             <objects>
-                <viewController id="9ff-dq-5II" customClass="DetailedPageViewController" customModule="WellcutDemoExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9ff-dq-5II" customClass="DetailedPageViewController" customModule="WellcutDemoExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vm2-ea-gOD"/>
                         <viewControllerLayoutGuide type="bottom" id="lnE-f1-SXF"/>
