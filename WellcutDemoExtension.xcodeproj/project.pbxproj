@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		82F10CE51DD2064C00421611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10CE41DD2064C00421611 /* AppDelegate.swift */; };
-		82F10CE71DD2064C00421611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10CE61DD2064C00421611 /* ViewController.swift */; };
+		82F10CE71DD2064C00421611 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10CE61DD2064C00421611 /* MainPageViewController.swift */; };
 		82F10CEA1DD2064C00421611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F10CE81DD2064C00421611 /* Main.storyboard */; };
 		82F10CEC1DD2064C00421611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F10CEB1DD2064C00421611 /* Assets.xcassets */; };
 		82F10CEF1DD2064C00421611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F10CED1DD2064C00421611 /* LaunchScreen.storyboard */; };
+		82F10CF71DD20E7000421611 /* DetailedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82F10CE11DD2064C00421611 /* WellcutDemoExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellcutDemoExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F10CE41DD2064C00421611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82F10CE61DD2064C00421611 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82F10CE61DD2064C00421611 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		82F10CE91DD2064C00421611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82F10CEB1DD2064C00421611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82F10CEE1DD2064C00421611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82F10CF01DD2064C00421611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				82F10CE41DD2064C00421611 /* AppDelegate.swift */,
-				82F10CE61DD2064C00421611 /* ViewController.swift */,
+				82F10CE61DD2064C00421611 /* MainPageViewController.swift */,
 				82F10CE81DD2064C00421611 /* Main.storyboard */,
+				82F10CF61DD20E7000421611 /* DetailedPageViewController.swift */,
 				82F10CEB1DD2064C00421611 /* Assets.xcassets */,
 				82F10CED1DD2064C00421611 /* LaunchScreen.storyboard */,
 				82F10CF01DD2064C00421611 /* Info.plist */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F10CE71DD2064C00421611 /* ViewController.swift in Sources */,
+				82F10CE71DD2064C00421611 /* MainPageViewController.swift in Sources */,
 				82F10CE51DD2064C00421611 /* AppDelegate.swift in Sources */,
+				82F10CF71DD20E7000421611 /* DetailedPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
 				INFOPLIST_FILE = WellcutDemoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobinin.WellcutDemoExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X72G5VQBS8;
 				INFOPLIST_FILE = WellcutDemoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drobinin.WellcutDemoExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";

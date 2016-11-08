@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainPageViewController.swift
 //  WellcutDemoExtension
 //
 //  Created by Vadim Drobinin on 8/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainPageViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
